@@ -12,7 +12,9 @@ app.get("/", (request, response) => {
 });
 //get users -todoList
 app.get("/todos", (request, response) => {
-  response.send("<hi>asdasdas</h1>");
+  response.send(
+    "<ul><li>Go to market</li><li>Cooking rice</li><li>Washing dishes</li><li>Learing at coderX-Tokyo</li></ul>"
+  );
 });
 
 // listen for requests :)
