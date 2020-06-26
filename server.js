@@ -10,6 +10,10 @@ const app = express();
 app.get("/", (request, response) => {
   response.send("I love CodersX");
 });
+//get users -todoList
+app.get("/todos", (request, response) => {
+  response.send("<hi>asdasdas</h1>");
+});
 
 // listen for requests :)
 app.listen(process.env.PORT, () => {
